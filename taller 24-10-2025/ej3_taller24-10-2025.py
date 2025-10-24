@@ -10,6 +10,7 @@ if fruta in frutas_precios:
     cantidad = int(input("Digite la cantidad de frutas a comprar: "))
     precio = frutas_precios[fruta]
     total = precio * cantidad
-    print("Total a pagar: ", total)
+    print(f"{fruta}: {precio}\nTotal a pagar: {total}")
 else:
     print("la fruta no existe")
+ 
