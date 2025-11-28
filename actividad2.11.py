@@ -13,12 +13,15 @@ print(serie_aleatoria)
 serie_aleatoria.index.name = "idx"
 print(serie_aleatoria)
 
+serie_cuadrados = serie_aleatoria ** 2
+print("Serie de cuadrados:")
+print(serie_cuadrados)
 df = DataFrame(serie_aleatoria)
-print("DataFrame de serie aleatoria:")
+print("DataFrame de la serie aleatoria:")
 print(df)
 
 print("Ultimos 4 elementos de la serie:")
 print(serie_aleatoria.tail(4))
 
-numeros_mayores_50 = serie_aleatoria[serie_aleatoria > 500].tolist()
-print("Números mayores a 50:", numeros_mayores_50)
+numeros_mayores_500 = serie_cuadrados[serie_cuadrados > 500].tolist()
+print("Números mayores a 500:", numeros_mayores_500)
